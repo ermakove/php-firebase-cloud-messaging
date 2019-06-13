@@ -1,9 +1,9 @@
 <?php
-namespace sngrl\PhpFirebaseCloudMessaging;
+namespace ermakove\PhpFirebaseCloudMessaging;
 
-use sngrl\PhpFirebaseCloudMessaging\Recipient\Recipient;
-use sngrl\PhpFirebaseCloudMessaging\Recipient\Topic;
-use sngrl\PhpFirebaseCloudMessaging\Recipient\Device;
+use ermakove\PhpFirebaseCloudMessaging\Recipient\Recipient;
+use ermakove\PhpFirebaseCloudMessaging\Recipient\Topic;
+use ermakove\PhpFirebaseCloudMessaging\Recipient\Device;
 
 /**
  * @author sngrl
@@ -24,6 +24,7 @@ class Message implements \JsonSerializable
     private $recipientType;    
     private $jsonData;
     private $condition;
+    private $mutable_content;
 
 
     public function __construct() {
@@ -35,7 +36,7 @@ class Message implements \JsonSerializable
      *
      * @param Recipient $recipient
      *
-     * @return \sngrl\PhpFirebaseCloudMessaging\Message
+     * @return \ermakove\PhpFirebaseCloudMessaging\Message
      */
     public function addRecipient(Recipient $recipient)
     {
@@ -74,7 +75,13 @@ class Message implements \JsonSerializable
         $this->data = $data;
         return $this;
     }
-            
+ 
+     public function setMutableContent($mutable_content)
+    {
+        $this->mutable_content = $mutable_content;
+        return $this;
+    }
+
     /**
      * Specify a condition pattern when sending to combinations of topics
      * https://firebase.google.com/docs/cloud-messaging/topic-messaging#sending_topic_messages_from_the_server
@@ -184,6 +191,9 @@ class Message implements \JsonSerializable
         }
         if ($this->notification) {
             $jsonData['notification'] = $this->notification;
+        }
+        if ($this->mutable_content) {
+            $jsonData['mutable_content'] = $this->mutable_content;
         }
 
         return $jsonData;
