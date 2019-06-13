@@ -1,5 +1,5 @@
 <?php
-namespace sngrl\PhpFirebaseCloudMessaging;
+namespace ermakove\PhpFirebaseCloudMessaging;
 
 use GuzzleHttp;
 
@@ -27,7 +27,7 @@ class Client implements ClientInterface
      *
      * @param string $apiKey
      *
-     * @return \sngrl\PhpFirebaseCloudMessaging\Client
+     * @return \ermakove\PhpFirebaseCloudMessaging\Client
      */
     public function setApiKey($apiKey)
     {
@@ -40,7 +40,7 @@ class Client implements ClientInterface
      *
      * @param string $url
      *
-     * @return \sngrl\PhpFirebaseCloudMessaging\Client
+     * @return \ermakove\PhpFirebaseCloudMessaging\Client
      */
     public function setProxyApiUrl($url)
     {

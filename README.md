@@ -21,10 +21,10 @@ Or add this to your composer.json and run "composer update":
 
 #Send message to Device
 ```
-use sngrl\PhpFirebaseCloudMessaging\Client;
-use sngrl\PhpFirebaseCloudMessaging\Message;
-use sngrl\PhpFirebaseCloudMessaging\Recipient\Device;
-use sngrl\PhpFirebaseCloudMessaging\Notification;
+use ermakove\PhpFirebaseCloudMessaging\Client;
+use ermakove\PhpFirebaseCloudMessaging\Message;
+use ermakove\PhpFirebaseCloudMessaging\Recipient\Device;
+use ermakove\PhpFirebaseCloudMessaging\Notification;
 
 $server_key = '_YOUR_SERVER_KEY_';
 $client = new Client();
@@ -62,10 +62,10 @@ $message
 #Send message to Topic
 
 ```
-use sngrl\PhpFirebaseCloudMessaging\Client;
-use sngrl\PhpFirebaseCloudMessaging\Message;
-use sngrl\PhpFirebaseCloudMessaging\Recipient\Topic;
-use sngrl\PhpFirebaseCloudMessaging\Notification;
+use ermakove\PhpFirebaseCloudMessaging\Client;
+use ermakove\PhpFirebaseCloudMessaging\Message;
+use ermakove\PhpFirebaseCloudMessaging\Recipient\Topic;
+use ermakove\PhpFirebaseCloudMessaging\Notification;
 
 $server_key = '_YOUR_SERVER_KEY_';
 $client = new Client();
@@ -107,7 +107,7 @@ $message
 
 #Subscribe user to the topic
 ```
-use sngrl\PhpFirebaseCloudMessaging\Client;
+use ermakove\PhpFirebaseCloudMessaging\Client;
 
 $server_key = '_YOUR_SERVER_KEY_';
 $client = new Client();
@@ -121,7 +121,7 @@ var_dump($response->getBody()->getContents());
 
 #Remove user subscription to the topic
 ```
-use sngrl\PhpFirebaseCloudMessaging\Client;
+use ermakove\PhpFirebaseCloudMessaging\Client;
 
 $server_key = '_YOUR_SERVER_KEY_';
 $client = new Client();

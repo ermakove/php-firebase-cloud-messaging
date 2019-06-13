@@ -1,11 +1,11 @@
 <?php
-namespace sngrl\PhpFirebaseCloudMessaging\Tests;
+namespace ermakove\PhpFirebaseCloudMessaging\Tests;
 
-use sngrl\PhpFirebaseCloudMessaging\Recipient\Recipient;
-use sngrl\PhpFirebaseCloudMessaging\Message;
-use sngrl\PhpFirebaseCloudMessaging\Recipient\Topic;
-use sngrl\PhpFirebaseCloudMessaging\Notification;
-use sngrl\PhpFirebaseCloudMessaging\Recipient\Device;
+use ermakove\PhpFirebaseCloudMessaging\Recipient\Recipient;
+use ermakove\PhpFirebaseCloudMessaging\Message;
+use ermakove\PhpFirebaseCloudMessaging\Recipient\Topic;
+use ermakove\PhpFirebaseCloudMessaging\Notification;
+use ermakove\PhpFirebaseCloudMessaging\Recipient\Device;
 
 class MessageTest extends PhpFirebaseCloudMessagingTestCase
 {

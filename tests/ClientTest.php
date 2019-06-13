@@ -1,9 +1,9 @@
 <?php
-namespace sngrl\PhpFirebaseCloudMessaging\Tests;
+namespace ermakove\PhpFirebaseCloudMessaging\Tests;
 
-use sngrl\PhpFirebaseCloudMessaging\Client;
-use sngrl\PhpFirebaseCloudMessaging\Recipient\Topic;
-use sngrl\PhpFirebaseCloudMessaging\Message;
+use ermakove\PhpFirebaseCloudMessaging\Client;
+use ermakove\PhpFirebaseCloudMessaging\Recipient\Topic;
+use ermakove\PhpFirebaseCloudMessaging\Message;
 
 use GuzzleHttp;
 use GuzzleHttp\Psr7\Response;

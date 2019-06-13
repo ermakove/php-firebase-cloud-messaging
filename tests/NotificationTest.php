@@ -1,7 +1,7 @@
 <?php
-namespace sngrl\PhpFirebaseCloudMessaging\Tests;
+namespace ermakove\PhpFirebaseCloudMessaging\Tests;
 
-use sngrl\PhpFirebaseCloudMessaging\Notification;
+use ermakove\PhpFirebaseCloudMessaging\Notification;
 
 class NotificationTest extends PhpFirebaseCloudMessagingTestCase
 {
